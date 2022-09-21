@@ -1,0 +1,11 @@
+spring: 
+  api: 
+    fundtransfer: 
+      context-path: /v1/accounts/deposits/balance/inquiry
+      hosturl: /fundtransfer
+      jolt-filename: fundtransfer792256-jolt.json
+  datasource: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ${mysql_pwd}
+    url: jdbc:mysql://${mysql_url}:3306/camunda
+    username: ${mysql_user}
